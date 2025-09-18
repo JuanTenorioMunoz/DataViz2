@@ -1,0 +1,98 @@
+.dashboard {
+  font-family: sans-serif;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filter-button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  color: white;
+  background-color: #9ca3af;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button.active.producto-a {
+  background-color: #00a89c;
+}
+
+.filter-button.active.producto-b {
+  background-color: #9654e5;
+}
+
+.filter-button.active.producto-c {
+  background-color: #ff8800;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .charts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chart-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.chart-description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.chart-container {
+  height: 16rem;
+}
