@@ -1,19 +1,13 @@
-import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router'
-import ProductDashboard from './pages/Dashboard'
-
+import React from 'react';
+import Dashboard from './components/Dashboard';
+import './App.css';
 
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ProductDashboard/>}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <div className="App">
+      <Dashboard />
+    </div>
+  );
 }
 
-export default App
+export default App;
